@@ -1,0 +1,5 @@
+{
+  "calculator_test.py::TddInPythonExample::test_calculator_returns_error_messag_if_y_arg_not_number": true,
+  "calculator_test.py::TddInPythonExample::test_calculator_returns_error_message_if_both_args_not_numbers": true,
+  "calculator_test.py::TddInPythonExample::test_calculator_returns_error_message_if_x_arg_not_number": true
+}

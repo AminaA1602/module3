@@ -4,10 +4,12 @@ Created on Tue Jan 29 15:27:32 2019
 
 @author: Skitt
 """
+#import unittest
+
 
 ###Check if database is empty####
 def checkIfTables():
-c.execute("SELECT name FROM sqlite_master WHERE type='table';")
+    c.execute("SELECT name FROM sqlite_master WHERE type='table';")
 tablesInDb =(c.fetchall())
 print(len(tablesInDb))
 print(tablesInDb)
@@ -20,7 +22,7 @@ else:
 
 ####Check if tables in database are empty###
 def checkIfTableEmpty():
-c.execute('SELECT * FROM business')
+    c.execute('SELECT * FROM business')
 resultsRecords = c.fetchall()
 if len(resultsRecords ) > 0:
     print("Table not empty")
@@ -45,7 +47,3 @@ checkIfTableEmpty()
 #        return c
 #    except:
 #        return False
-
-^^^^^^ updated function file
-import unittest
-from funct2 import *
